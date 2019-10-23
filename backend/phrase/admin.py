@@ -4,6 +4,6 @@ from .models import Phrase
 # Register your models here.
 
 class PhraseAdmin(admin.ModelAdmin):
-    list_display = ('user','title','description','date')
+    list_display = ('user','title','description','date','category')
 
 admin.site.register(Phrase,PhraseAdmin)    

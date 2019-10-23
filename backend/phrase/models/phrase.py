@@ -10,5 +10,23 @@ class Phrase(models.Model):
     description = models.TextField(max_length = 100)
     date = models.DateField()
 
+    Romance = 'Romance'
+    Fiction = 'Fiction'
+    Politics = 'Politics'
+    Fantasy = 'Fantasy'
+    Social = 'Social'
+    Other = 'Other'
+
+    category_choices = [
+        (Romance, Romance),
+        (Fiction, Fiction),
+        (Politics, Politics),
+        (Fantasy, Fantasy),
+        (Social, Social),
+        (Other, Other),
+    ]
+
+    category = models.CharField(max_length = 30, choices = category_choices, default = Romance,)
+
     def __str__(self):
         return self.title
