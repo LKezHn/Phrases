@@ -1,1 +1,11 @@
-<p>list-phrases works!</p>
+<div class="main">
+    <h2>All the Phrases:</h2>
+    <div *ngFor="let phrase of phrases">
+        <p>Title: {{ phrase.title }}</p>
+        <ul>
+            <li>Description: {{phrase.description}}</li>
+            <li>Date: {{ phrase.date }}</li>
+        </ul>
+    </div>
+    <p>list-phrases works!</p>
+</div>
