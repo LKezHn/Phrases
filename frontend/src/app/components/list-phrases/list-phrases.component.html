@@ -1,11 +1,16 @@
 <div class="main">
     <h2>All the Phrases:</h2>
-    <div *ngFor="let phrase of phrases">
-        <p>Title: {{ phrase.title }}</p>
-        <ul>
-            <li>Description: {{phrase.description}}</li>
-            <li>Date: {{ phrase.date }}</li>
-        </ul>
+    <div class="row">
+        <div class="col-sm-4 text-center" style="background-color: darkgrey;">Title</div>
+        <div class="col-sm-4 text-center" style="background-color: darkgrey;">Description</div>
+        <div class="col-sm-4 text-center" style="background-color: darkgrey;">Date</div>
     </div>
+    <div *ngFor="let phrase of phrases">
+        <div class="row">
+            <div class="col-sm-4" style="background-color: azure;">{{phrase.title}}</div>
+            <div class="col-sm-4" style="background-color: azure;">{{phrase.description}}</div>
+            <div class="col-sm-4" style="background-color: azure;">{{phrase.date}}</div>
+        </div>
+    </div><hr>
     <p>list-phrases works!</p>
 </div>
