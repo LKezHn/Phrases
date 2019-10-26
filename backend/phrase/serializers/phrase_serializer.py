@@ -6,4 +6,4 @@ class PhraseSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Phrase
-        fields = ('id', 'title', 'description','date')
+        fields = ('id', 'title', 'description','date','category')
