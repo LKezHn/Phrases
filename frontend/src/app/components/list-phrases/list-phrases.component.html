@@ -1,19 +1,20 @@
 <div class="main" style="padding-top:60px;">
     <h2>All the Phrases:</h2>
     <div class="row">
-        <div class="col-sm-4 text-center" style="background-color: darkgrey;">Title</div>
-        <div class="col-sm-4 text-center" style="background-color: darkgrey;">Description</div>
-        <div class="col-sm-4 text-center" style="background-color: darkgrey;">Date</div>
+        <div class="col-sm-2 text-center border" style="background-color: darkgrey;">Title</div>
+        <div class="col-sm-6 text-center border" style="background-color: darkgrey;">Description</div>
+        <div class="col-sm-2 text-center border" style="background-color: darkgrey;">Category</div>
+        <div class="col-sm-2 text-center border" style="background-color: darkgrey;">Date</div>
     </div>
     <div *ngFor="let phrase of phrases">
         <div class="row">
-            <div class="col-sm-4" style="background-color: azure;">{{phrase.title}}</div>
-            <div class="col-sm-4" style="background-color: azure;">{{phrase.description}}</div>
-            <div class="col-sm-4" style="background-color: azure;">{{phrase.date}}</div>
+            <div class="col-sm-2 border" style="background-color: azure;">{{phrase.title}}</div>
+            <div class="col-sm-6 border" style="background-color: azure;">{{phrase.description}}</div>
+            <div class="col-sm-2 border" style="background-color: azure;">{{phrase.category}}</div>
+            <div class="col-sm-2 border" style="background-color: azure;">{{phrase.date}}</div>
         </div>
     </div><hr>
     <p>list-phrases works!</p>
     <div *ngFor="let phrase of phrases">
-        <p>{{ phrase.category }}</p>
     </div>
 </div>
