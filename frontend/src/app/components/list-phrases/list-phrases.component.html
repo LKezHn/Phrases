@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main" style="padding-top:60px;">
     <h2>All the Phrases:</h2>
     <div class="row">
         <div class="col-sm-4 text-center" style="background-color: darkgrey;">Title</div>
@@ -13,4 +13,7 @@
         </div>
     </div><hr>
     <p>list-phrases works!</p>
+    <div *ngFor="let phrase of phrases">
+        <p>{{ phrase.category }}</p>
+    </div>
 </div>
