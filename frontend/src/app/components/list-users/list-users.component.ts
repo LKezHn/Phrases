@@ -9,6 +9,7 @@ import { User } from '../../models/user'
 })
 export class ListUsersComponent implements OnInit {
   users: User[];
+  userInfo = {};
 
   constructor(private userService: UserServiceService) { }
 
@@ -25,5 +26,18 @@ export class ListUsersComponent implements OnInit {
     });
   }
 
+  private getUserInfo(id: string){
+    this.userService.getUserInfo(id).subscribe(
+      res=>{
+        console.log(res);
+        this.userInfo = res;
+      }
+    );
+  }
+
+  submitId(id : HTMLInputElement){
+    this.getUserInfo(id.value);
+    return false;
+  }
 }
 
