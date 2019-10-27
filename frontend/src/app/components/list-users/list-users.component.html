@@ -3,4 +3,16 @@
     <div *ngFor="let user of users">
         <a>{{ user.first_name }}</a>
     </div>
+    <form (submit)="submitId(id)">
+        <input class="form-group" type="text" placeholder="User Id" #id>
+        <button class="btn btn-primary mt-2">Send</button>
+    </form>
+</div>
+<div class="container" style="margin-top: 60px;">
+    <div class="row">
+        <div class="col-sm-4 mx-auto">
+            <h5>Info</h5>
+            <p>First Name: {{userInfo.first_name}}</p>
+        </div>
+    </div>
 </div>
