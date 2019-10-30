@@ -31,6 +31,9 @@ export class ListUsersComponent implements OnInit {
       res=>{
         console.log(res);
         this.userInfo = res;
+      },
+      err=>{
+        alert('Id Inválido');
       }
     );
   }

@@ -1,14 +1,16 @@
-<div class="main" style="padding-top:60px;">
+<div class="container" style="padding-top:60px;">
     <h2>All the Phrases:</h2>
-    <div class="row">
+    <div class="row mx-auto">
         <div class="col-sm-2 text-center border" style="background-color: darkgrey;">Title</div>
         <div class="col-sm-6 text-center border" style="background-color: darkgrey;">Description</div>
+        <div class="col-sm-2 text-center border" style="background-color: darkgrey;">Created By</div>
         <div class="col-sm-2 text-center border" style="background-color: darkgrey;">Date</div>
     </div>
     <div *ngFor="let phrase of phrases">
-        <div class="row">
+        <div class="row mx-auto">
             <div class="col-sm-2 border" style="background-color: azure;">{{phrase.title}}</div>
             <div class="col-sm-6 border" style="background-color: azure;">{{phrase.description}}</div>
+            <div class="col-sm-2 border" style="background-color: azure;">{{phrase.user.first_name}}</div>
             <div class="col-sm-2 border" style="background-color: azure;">{{phrase.date}}</div>
         </div>
     </div><hr>

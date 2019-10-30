@@ -1,7 +1,7 @@
 
 export class Phrase{
     public id?: string;
-    public user?: string;
+    public user?: {};
     public title?: string;
     public description?: string;
     public date?: string;
