@@ -28,5 +28,16 @@ export class UserServiceService {
 
   public getUserInfo(id: string){
     return this.http.get<any>(`${this.apiUrl}/${id}`);
-  }  
+  } 
+  
+  public createUser(obj: {}){
+    return this.http.post(`${this.apiUrl}/`,obj, {
+      headers: new HttpHeaders({
+           'Content-Type':  'application/json',
+         })
+    })
 }
+}
+
+  
+

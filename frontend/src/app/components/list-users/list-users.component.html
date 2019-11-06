@@ -17,3 +17,16 @@
         </div>
     </div>
 </div>
+<div class="container" style="margin-top: 60px;">
+    <div class="row">
+        <div class="col-sm-4 mx-auto">
+            <form class="card card-body bg-info" (submit)="submitInfo(f_name, l_name, phone)">    
+                <h5 class="text-center text-light">New User</h5>
+                <input class="form-group" type="text" placeholder="First Name" #f_name>
+                <input class="form-group" type="text" placeholder="Last Name" #l_name>
+                <input class="form-group" type="text" placeholder="Phone Number" #phone>
+                <button class="btn btn-outline-light">Create</button>
+            </form>
+        </div>
+    </div>
+</div>
