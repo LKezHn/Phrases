@@ -1,0 +1,14 @@
+<div class="container" style="padding-top:60px;">
+    <h2 style="text-align: center; margin-top: 10px;">All the Phrases:</h2>
+    <div *ngFor="let phrase of phrases">
+        <div class="card" style="margin: 3px; border: 2px solid rgb(10, 77, 144);">
+            <div class="card-body">
+                <h5 class="card-title"> {{ phrase.title}}</h5>
+                <h6 class="card-text">Description: {{ phrase.description}}</h6>
+                <a [routerLink]="['/phrases', phrase.id]" class="card-link">More Details...</a>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" style="margin:3px;">Add New Phrase</button>
+    <hr>
+</div>

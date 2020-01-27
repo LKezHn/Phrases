@@ -3,9 +3,8 @@
 
 body{
   background: #1c92d2;  /* fallback for old browsers */
-  background: linear-gradient(to top, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: -webkit-linear-gradient(to top, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
-  height: 100vh;
+  
+
 }
 
 .sidenav {

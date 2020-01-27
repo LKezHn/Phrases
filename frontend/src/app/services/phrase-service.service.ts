@@ -26,5 +26,7 @@ export class PhraseServiceService {
       );
   }
 
-  
+  public getOnePhrase(id: number){
+    return this.http.get<any>(`${this.apiUrl}/${id}`)
+  }
   }

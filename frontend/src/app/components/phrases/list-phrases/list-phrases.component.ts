@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PhraseServiceService } from '../../services/phrase-service.service';
-import { Phrase } from '../../models/phrase'
+import { PhraseServiceService } from '../../../services/phrase-service.service';
+import { Phrase } from '../../../models/phrase'
 
 @Component({
   selector: 'app-list-phrases',

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserServiceService } from '../../services/user-service.service';
-import { User } from '../../models/user'
+import { UserServiceService } from '../../../services/user-service.service';
+import { User } from '../../../models/user'
 
 @Component({
   selector: 'app-list-users',
@@ -39,8 +39,8 @@ export class ListUsersComponent implements OnInit {
     );
   }
 
-  submitId(id : HTMLInputElement){
-    this.getUserInfo(id.value);
+  submitId(id : string){
+    this.getUserInfo(id);
     return false;
   }
 
