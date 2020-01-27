@@ -1,3 +1,3 @@
 # Phrases
 
-## A practice project using Django 2.2, Angular 8 & Bootstrap
+## Using Django 2.2
